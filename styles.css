@@ -1,0 +1,93 @@
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background-color: #e8f5e9; /* Soft green */
+  color: #2e7d32; /* Dark green text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #66bb6a; /* Medium green */
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* Game Container */
+#game-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Waste Items */
+#items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.draggable {
+  width: 80px;
+  cursor: grab;
+  transition: transform 0.2s;
+}
+
+.draggable:active {
+  transform: scale(1.1);
+}
+
+/* Recycling Bins */
+#bins {
+  display: flex;
+  gap: 15px;
+}
+
+.bin {
+  width: 120px;
+  height: 150px;
+  background-color: #a5d6a7; /* Light green */
+  border: 2px solid #2e7d32; /* Dark green border */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bin:hover {
+  background-color: #81c784; /* Slightly darker green */
+}
+
+/* Info Panel */
+#info-panel {
+  background: white;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Restart Button */
+#restart {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#restart:hover {
+  background-color: #1b5e20;
+}

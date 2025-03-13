@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trash Sorter Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>♻️ Trash Sorter Game</h1>
+      <p>Sort waste items into the correct bins to help the planet!</p>
+    </header>
+
+    <main>
+      <div id="game-container">
+        <!-- Waste Items Section -->
+        <div id="items">
+          <img
+            src="banana.png"
+            class="draggable"
+            id="banana"
+            draggable="true"
+            alt="Banana Peel"
+          />
+          <img
+            src="bottle.png"
+            class="draggable"
+            id="bottle"
+            draggable="true"
+            alt="Plastic Bottle"
+          />
+          <img
+            src="newspaper.png"
+            class="draggable"
+            id="newspaper"
+            draggable="true"
+            alt="Newspaper"
+          />
+        </div>
+
+        <!-- Recycling Bins -->
+        <div id="bins">
+          <div class="bin" id="compost">🌱 Compost</div>
+          <div class="bin" id="recycling">🔄 Recycling</div>
+          <div class="bin" id="paper">📄 Paper</div>
+        </div>
+      </div>
+
+      <!-- Feedback Section -->
+      <div id="info-panel">
+        <p id="feedback">Drag items to the correct bins!</p>
+        <p>Score: <span id="score">0</span></p>
+        <p>Time Left: <span id="timer">60</span> sec</p>
+      </div>
+
+      <button id="restart">Restart Game</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
